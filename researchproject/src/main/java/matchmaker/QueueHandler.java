@@ -7,7 +7,7 @@ import java.util.HashSet;
  * Created by Robi on 2016.02.26..
  */
 public class QueueHandler {
-    HashSet<Queue> queues = new HashSet<>();
+    private HashSet<Queue> queues = new HashSet<>();
 
     public void update(){
         for (Queue q : queues

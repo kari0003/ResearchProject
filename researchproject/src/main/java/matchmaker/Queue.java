@@ -9,7 +9,6 @@ public class Queue {
     private QueueStatus status;
     private LinkedList<QueueEntry> players = new LinkedList<>();
     private QueueMatcher matcher;
-    private QueueHandler updater;
     private LinkedList<Match> found_matches = new LinkedList<>();
 
     public QueueStatus onUpdate() {
