@@ -1,4 +1,8 @@
  language: java
- cache:
-  directories:
-  - researchproject
+
+ install: ./researchproject/build.gradle
+  
+before_install:
+ - chmod +x gradlew
+ 
+ 
