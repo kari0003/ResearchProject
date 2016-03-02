@@ -1,4 +1,6 @@
-package matchmaker;
+package matchmaker.queue;
+
+import matchmaker.Player;
 
 /**
  * Created by Robi on 2016.02.26..

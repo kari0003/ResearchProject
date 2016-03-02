@@ -1,4 +1,4 @@
-package matchmaker;
+package matchmaker.queue;
 
 /**
  * Created by Robi on 2016.02.26..

@@ -1,4 +1,7 @@
-package matchmaker;
+package matchmaker.queue;
+
+import matchmaker.Player;
+import matchmaker.match.Match;
 
 import java.util.LinkedList;
 

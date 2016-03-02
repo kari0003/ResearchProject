@@ -1,4 +1,6 @@
-package matchmaker;
+package matchmaker.queue;
+
+import matchmaker.match.Match;
 
 import java.util.LinkedList;
 

@@ -1,4 +1,4 @@
-package matchmaker;
+package matchmaker.queue;
 
 import java.util.HashSet;
 
