@@ -7,6 +7,9 @@ import java.util.LinkedList;
 
 /**
  * Created by Robi on 2016.02.25..
+ * Represents a queue, in witch the players are being matched. The queue is responsible for any operations in the entry list.
+ * The way the queue operates are determined by QueueMatcher, and QueueHandler. The different types of queues can be
+ * assembled with configuring these objects.
  */
 public class Queue {
     private QueueStatus status;

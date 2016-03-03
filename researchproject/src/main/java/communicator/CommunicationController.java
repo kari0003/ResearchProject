@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by Robi on 2016.02.29..
+ *
+ * CommunicationController handles incoming requests, and repsponds to them.
+ * 
  */
 
 @RestController

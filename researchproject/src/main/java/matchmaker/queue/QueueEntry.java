@@ -4,6 +4,7 @@ import matchmaker.Player;
 
 /**
  * Created by Robi on 2016.02.26..
+ * An entry in the Queue. Can be passed to the QueueMatcher, which in case of a match transforms it into a TeamMember.
  */
 public class QueueEntry {
     public Player player;

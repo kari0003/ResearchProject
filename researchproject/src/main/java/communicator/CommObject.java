@@ -2,9 +2,10 @@ package communicator;
 
 /**
  * Created by Robi on 2016.02.29..
+ *
+ *
  */
 public class CommObject {
     RequestType rt;
-    //Attributes
-    //super class of all requests.
+    Object packet; //Json...
 }
