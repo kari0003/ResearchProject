@@ -12,13 +12,14 @@ import java.util.LinkedList;
  * assembled with configuring these objects.
  */
 public class Queue {
+    private long id;
     private QueueStatus status;
-    private LinkedList<QueueEntry> players = new LinkedList<>();
+    private LinkedList<QueueEntry> entries = new LinkedList<>();
     private QueueMatcher matcher;
     private LinkedList<Match> found_matches = new LinkedList<>();
 
     public QueueStatus onUpdate() {
-        LinkedList<Match> matches = matcher.findMatches(players);
+        LinkedList<Match> matches = matcher.findMatches(entries);
         if (matches != null && matches.size() > 0) {
             status = QueueStatus.MATCH_FOUND;
             found_matches.addAll(matches);
@@ -27,12 +28,26 @@ public class Queue {
     }
 
     public void addPlayer(Player player) {
-        players.add(new QueueEntry(player));
+        entries.add(new QueueEntry(player));
     }
 
     public void removePlayer(Player player) {
         //players.remove();
     }
 
+    public LinkedList<QueueEntry> getEntries(){
+        return entries;
+    }
 
+    public LinkedList<Player> getPlayers(){
+        LinkedList<Player> players = new LinkedList<Player>();
+        for (QueueEntry e : entries ) {
+            players.add(e.player);
+        }
+        return players;
+    }
+
+    public long getId() {
+        return id;
+    }
 }

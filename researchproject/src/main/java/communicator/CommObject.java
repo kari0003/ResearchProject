@@ -6,6 +6,6 @@ package communicator;
  *
  */
 public class CommObject {
-    RequestType rt;
-    Object packet; //Json...
+    public RequestType rt;
+    public Object packet; //Json...
 }

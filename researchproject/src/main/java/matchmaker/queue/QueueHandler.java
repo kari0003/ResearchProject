@@ -8,12 +8,28 @@ import java.util.HashSet;
  * calls the onUpdate method when the queue should be updated.
  */
 public class QueueHandler {
-    private HashSet<Queue> queues = new HashSet<>();
+    private static QueueHandler handlerInstance = new QueueHandler();
+    private HashSet<Queue> queues = new HashSet<Queue>();
 
     public void update(){
         for (Queue q : queues
              ) {
             q.onUpdate();
         }
+    }
+
+    public static QueueHandler getHandler() {
+        return handlerInstance;
+    }
+
+    public Queue getList(long queueId) {
+        Queue yourQueue = null;
+        for (Queue q: queues
+             ) {
+            if(q.getId() == queueId){
+                yourQueue = q;
+            }
+        }
+        return yourQueue;
     }
 }
